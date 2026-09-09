@@ -1,5 +1,4 @@
-"""PPO training and fine-tuning for the ARTEMIS trading agent."""
-import argparse
+"""PPO training and fine-tuning for the research-grade ARTEMIS agent."""
 import os
 import time
 
@@ -19,66 +18,46 @@ DEFAULT_HYPERPARAMS = {
     "gamma": 0.99,
     "gae_lambda": 0.95,
     "ent_coef": 0.01,
-    "verbose": 1,
+    "verbose": 0,
 }
 
 
-def _make_env(df, reward_config):
+def make_env(df, reward_config=None):
     def _init():
-        return TradingEnv(df, reward_config=reward_config)
+        return TradingEnv(df, reward_config)
     return _init
 
 
-def train(
-    regime: str,
-    reward_config: dict = None,
-    total_timesteps: int = 500000,
-    save_path: str = None,
-    df=None,
-) -> PPO:
+def train(regime, reward_config=None, total_timesteps=500000, save_path=None, df=None, seed=SEED) -> PPO:
     if df is None:
         df = DataPipeline().get_regime(regime)
-
-    env = DummyVecEnv([_make_env(df, reward_config)])
-    model = PPO("MlpPolicy", env, seed=SEED, **DEFAULT_HYPERPARAMS)
-
-    start = time.time()
+    env = DummyVecEnv([make_env(df, reward_config)])
+    model = PPO("MlpPolicy", env, seed=seed, **DEFAULT_HYPERPARAMS)
+    t0 = time.time()
     model.learn(total_timesteps=total_timesteps)
-    elapsed = time.time() - start
-    print(f"[ARTEMIS] Training complete for regime='{regime}' in {elapsed:.1f}s "
-          f"({total_timesteps} timesteps)")
-
-    if save_path is None:
-        os.makedirs("models", exist_ok=True)
-        save_path = os.path.join("models", f"{regime}_ppo.zip")
-    else:
-        os.makedirs(os.path.dirname(save_path) or ".", exist_ok=True)
+    elapsed = time.time() - t0
+    save_path = save_path or f"models/{regime}_ppo_seed{seed}.zip"
+    os.makedirs(os.path.dirname(save_path) or ".", exist_ok=True)
     model.save(save_path)
-    print(f"[ARTEMIS] Model saved to {save_path}")
+    print(f"[ARTEMIS] Trained {total_timesteps} steps in {elapsed:.0f}s -> {save_path}")
     return model
 
 
-def finetune(
-    model: PPO,
-    reward_config: dict,
-    regime: str,
-    steps: int = 50000,
-    df=None,
-) -> PPO:
+def finetune(model, reward_config, regime, steps=50000, df=None):
     if df is None:
         df = DataPipeline().get_regime(regime)
-
-    new_env = DummyVecEnv([_make_env(df, reward_config)])
+    new_env = DummyVecEnv([make_env(df, reward_config)])
     model.set_env(new_env)
     model.learn(total_timesteps=steps, reset_num_timesteps=False)
     return model
 
 
 if __name__ == "__main__":
-    print("[ARTEMIS] Running agent.train...")
+    import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--regime", type=str, default="bull", choices=["bull", "bear", "sideways"])
-    parser.add_argument("--total_timesteps", type=int, default=500000)
-    parser.add_argument("--save_path", type=str, default=None)
+    parser.add_argument("--regime", default="bull")
+    parser.add_argument("--timesteps", type=int, default=500000)
+    parser.add_argument("--seed", type=int, default=SEED)
     args = parser.parse_args()
-    train(args.regime, total_timesteps=args.total_timesteps, save_path=args.save_path)
+    print(f"[ARTEMIS] Running agent/train.py -- regime={args.regime} seed={args.seed}")
+    train(args.regime, total_timesteps=args.timesteps, seed=args.seed)
