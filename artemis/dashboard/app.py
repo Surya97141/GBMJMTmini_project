@@ -2,6 +2,16 @@
 import datetime
 import json
 import os
+import sys
+
+# Makes `agent`, `data`, `diagnostics`, etc. importable, AND makes every
+# relative path in this file ("models/...", "results/...", "logs/...")
+# resolve correctly, regardless of the working directory the app was
+# launched from -- locally we always `cd` into artemis/ first, but
+# Streamlit Cloud runs from the repo root instead.
+_ARTEMIS_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _ARTEMIS_DIR)
+os.chdir(_ARTEMIS_DIR)
 
 import numpy as np
 import pandas as pd
