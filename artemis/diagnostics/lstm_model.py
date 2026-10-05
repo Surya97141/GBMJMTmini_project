@@ -1,5 +1,5 @@
-"""LSTM + multi-head self-attention that diagnoses *why* an episode failed and *which*
-timesteps were responsible (the XAI component of research-grade ARTEMIS)."""
+# LSTM + multi-head self-attention that diagnoses WHY an episode failed and WHICH
+# timesteps were responsible -- this is the XAI component of research-grade ARTEMIS
 import numpy as np
 import torch
 import torch.nn as nn
@@ -40,17 +40,15 @@ STEP_KEYS = ["daily_return", "drawdown", "rsi", "position", "days_held", "reward
 
 
 class EpisodeDiagnosticLSTM(nn.Module):
-    """
-    Architecture:
-        Input (batch, T, 6)
-        -> LSTM(hidden=64, layers=2)      outputs (batch, T, 64)
-        -> MultiheadAttention(heads=4)    outputs (batch, T, 64) + weights
-        -> LayerNorm + residual
-        -> Mean pooling over T             outputs (batch, 64)
-        -> Dropout(0.3)
-        -> failure_head: Linear(64, 6)
-        -> fix_head:     Linear(64, 6)
-    """
+    # architecture:
+    #   input (batch, T, 6)
+    #   -> LSTM(hidden=64, layers=2)      outputs (batch, T, 64)
+    #   -> MultiheadAttention(heads=4)    outputs (batch, T, 64) + weights
+    #   -> LayerNorm + residual
+    #   -> mean pooling over T            outputs (batch, 64)
+    #   -> Dropout(0.3)
+    #   -> failure_head: Linear(64, 6)
+    #   -> fix_head:     Linear(64, 6)
 
     def __init__(self, input_size=INPUT_SIZE, hidden_size=64, num_layers=2, num_heads=4, dropout=0.3):
         super().__init__()
@@ -66,7 +64,7 @@ class EpisodeDiagnosticLSTM(nn.Module):
         self.fix_head = nn.Linear(hidden_size, len(FIX_TYPES))
 
     def forward(self, x: torch.Tensor):
-        """x: (batch, T, 6). Returns (failure_logits, fix_logits, attn_weights[batch,T,T])."""
+        # x: (batch, T, 6) -- returns (failure_logits, fix_logits, attn_weights[batch,T,T])
         lstm_out, _ = self.lstm(x)
         attn_out, attn_weights = self.attention(lstm_out, lstm_out, lstm_out)
         attended = self.layer_norm(lstm_out + attn_out)
@@ -94,7 +92,7 @@ class EpisodeDiagnosticLSTM(nn.Module):
             fix_probs = torch.softmax(fix_logits, dim=-1)[0].cpu().numpy()
             attn = attn_weights[0].cpu().numpy()
 
-        f_idx = int(f_probs.argmax())
+        f_idx=int(f_probs.argmax())
         fix_idx = int(fix_probs.argmax())
         return {
             "failure_mode": FAILURE_MODES[f_idx],

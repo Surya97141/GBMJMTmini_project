@@ -1,7 +1,7 @@
-"""SAC meta-policy that learns to adjust reward weights, on top of MetaEnv."""
+# SAC meta-policy that learns to adjust reward weights, on top of MetaEnv
 from stable_baselines3 import SAC
 
-SEED = 42
+SEED=42
 
 SAC_HYPERPARAMS = {
     "learning_rate": 3e-4,
@@ -18,6 +18,9 @@ SAC_HYPERPARAMS = {
 
 
 def create_meta_agent(meta_env):
+    # off-policy (SAC) instead of on-policy (PPO) here on purpose -- each MetaEnv step is
+    # expensive, so we need an algorithm that can learn from a replay buffer of old steps
+    # rather than needing a fresh full batch before every single update
     return SAC("MlpPolicy", meta_env, **SAC_HYPERPARAMS)
 
 

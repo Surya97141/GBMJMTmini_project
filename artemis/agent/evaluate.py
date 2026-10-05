@@ -1,4 +1,4 @@
-"""Evaluation metrics for trained ARTEMIS agents and a buy-and-hold benchmark."""
+# Evaluation metrics for trained ARTEMIS agents and a buy-and-hold benchmark
 import numpy as np
 
 from data.fetcher import DataPipeline, raw_close
@@ -37,6 +37,7 @@ def evaluate(model, regime, n_episodes=10, df=None, reward_config=None) -> dict:
 
 
 def benchmark_buy_and_hold(df) -> dict:
+    # simple buy on day 1, hold until the end -- the baseline every agent has to beat
     prices = raw_close(df).values
     total_return = float((prices[-1] - prices[0]) / prices[0])
     daily = np.diff(prices) / prices[:-1]

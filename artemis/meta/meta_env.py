@@ -1,26 +1,24 @@
-"""
-MetaEnv wraps the entire inner training loop as a gymnasium.Env.
-
-Each step of MetaEnv = one reward adjustment iteration:
-    1. Meta-agent observes current state (17-dim)
-    2. Meta-agent outputs delta adjustments to reward weights (6-dim)
-    3. New reward config applied and PPO finetuned for N steps
-    4. Meta-reward = improvement in Sharpe ratio
-    5. New observation returned
-
-This makes the reward engineering problem itself an RL problem,
-solvable by any off-policy algorithm. We use SAC.
-
-State space (17-dim):
-    [failure_mode_probs(6), reward_weights(6), sharpe(1),
-     total_return(1), max_drawdown(1), win_rate(1), num_trades(1)]
-
-Action space (6-dim continuous, bounded [-0.3, 0.3]):
-    [delta_return_weight, delta_transaction_cost, delta_drawdown_penalty,
-     delta_holding_bonus, delta_profit_take_bonus, delta_sharpe_bonus]
-
-Meta-reward: new_sharpe - old_sharpe (capped at [-1, 2])
-"""
+# MetaEnv wraps the entire inner training loop as a gymnasium.Env.
+#
+# Each step of MetaEnv = one reward adjustment iteration:
+#   1. Meta-agent observes current state (17-dim)
+#   2. Meta-agent outputs delta adjustments to reward weights (6-dim)
+#   3. New reward config applied and PPO finetuned for N steps
+#   4. Meta-reward = improvement in Sharpe ratio
+#   5. New observation returned
+#
+# This makes the reward engineering problem itself an RL problem, solvable
+# by any off-policy algorithm -- we use SAC.
+#
+# State space (17-dim):
+#   [failure_mode_probs(6), reward_weights(6), sharpe(1),
+#    total_return(1), max_drawdown(1), win_rate(1), num_trades(1)]
+#
+# Action space (6-dim continuous, bounded [-0.3, 0.3]):
+#   [delta_return_weight, delta_transaction_cost, delta_drawdown_penalty,
+#    delta_holding_bonus, delta_profit_take_bonus, delta_sharpe_bonus]
+#
+# Meta-reward: new_sharpe - old_sharpe, capped at [-1, 2]
 import copy
 
 import gymnasium
@@ -79,6 +77,8 @@ class MetaEnv(gymnasium.Env):
         return obs, {}
 
     def step(self, action):
+        # applying this action means a REAL ppo finetune run happens here -- this is
+        # why a single MetaEnv step can take tens of seconds instead of microseconds
         from agent.train import finetune as finetune_agent
 
         old_sharpe = self.current_sharpe
@@ -153,4 +153,4 @@ class MetaEnv(gymnasium.Env):
         return np.concatenate([failure_probs, norm_vec, perf])
 
     def render(self):
-        pass
+        pass  # unused

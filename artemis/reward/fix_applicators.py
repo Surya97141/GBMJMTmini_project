@@ -1,5 +1,5 @@
-"""Deterministic reward-config edits (hand-coded baseline, kept for ablation comparison)
-plus vector <-> config conversions used by the SAC meta-policy."""
+# Deterministic reward-config edits (hand-coded baseline, kept for ablation comparison),
+# plus the vector <-> config conversions the SAC meta-policy needs
 import numpy as np
 
 from env.trading_env import DEFAULT_REWARD_CONFIG, REWARD_CONFIG_BOUNDS
@@ -48,11 +48,13 @@ def reward_config_to_vector(config):
 
 
 def vector_to_reward_config(vec, reference=None):
+    # clip every single field back into REWARD_CONFIG_BOUNDS -- this is what stops a
+    # poorly-trained meta-policy from ever proposing a nonsensical reward config
     reference = reference or DEFAULT_REWARD_CONFIG
     config = dict(reference)
     for i, k in enumerate(REWARD_KEYS):
         lo, hi = REWARD_CONFIG_BOUNDS[k]
-        config[k] = float(np.clip(vec[i], lo, hi))
+        config[k]=float(np.clip(vec[i], lo, hi))
     return config
 
 

@@ -1,4 +1,4 @@
-"""Run the trained attention-LSTM over collected episodes and recommend a fix."""
+# Run the trained attention-LSTM over collected episodes and recommend a fix
 from collections import Counter
 
 import torch
@@ -27,6 +27,8 @@ def diagnose_episodes(lstm, trajectories):
 
 
 def most_common_fix(diagnoses):
+    # exclude NO_FIX_NEEDED whenever at least one episode actually failed, so a
+    # handful of profitable runs can't drown out a real, recurring problem
     fixes = [d["fix_type"] for d in diagnoses]
     non_trivial = [f for f in fixes if f != "NO_FIX_NEEDED"]
     if non_trivial:

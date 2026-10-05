@@ -1,8 +1,6 @@
-"""
-Tests whether the SAC meta-policy trained on NIFTY 50 generalises
-to unseen markets (BSE Sensex, Gold) without any meta-training.
-This is the cross-market generalization experiment.
-"""
+# Tests whether the SAC meta-policy trained on NIFTY 50 generalises to unseen
+# markets (BSE Sensex, Gold) without any meta-training -- the cross-market
+# generalization experiment
 import json
 import os
 
@@ -27,6 +25,9 @@ def run_cross_market(meta_agent_path="models/meta/sac_meta_policy.zip",
     lstm = load_lstm()
     meta_agent = load_meta_agent(meta_agent_path)
     base_model = PPO.load(base_model_path)
+    # meta_agent itself is never retrained below -- it only ever uses what it already
+    # learned on NIFTY, so any improvement here is real evidence of transfer, not just
+    # the meta-policy getting a second crack at the same market it was trained on
     pipeline = DataPipeline()
 
     results = {}

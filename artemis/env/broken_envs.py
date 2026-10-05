@@ -1,11 +1,12 @@
-"""Deliberately mis-specified reward configs used to manufacture labelled failure modes."""
+# Deliberately mis-specified reward configs used to manufacture labelled failure modes
 from env.trading_env import TradingEnv, DEFAULT_REWARD_CONFIG
 
 
 class BrokenDrawdownEnv(TradingEnv):
+    # drawdown_penalty zeroed out -> agent never punished for deep dips -> MAX_DRAWDOWN
     def __init__(self, df, reward_config=None, **kwargs):
         rc = (reward_config or DEFAULT_REWARD_CONFIG).copy()
-        rc["drawdown_penalty"] = 0.0
+        rc["drawdown_penalty"]=0.0
         super().__init__(df, reward_config=rc, **kwargs)
 
 

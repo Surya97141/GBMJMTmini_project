@@ -1,7 +1,5 @@
-"""
-Convenience script to run the full pipeline across multiple seeds.
-Use this after all models and data are ready.
-"""
+# Convenience script to run the full pipeline across multiple seeds.
+# Use this after all models and data are ready.
 import json
 
 import numpy as np
@@ -29,7 +27,7 @@ def run_single_seed(seed, regime="bull"):
         meta_agent, lstm, model, regime, df, n_iters=3, finetune_steps=20000,
         log_path=f"logs/seed{seed}_{regime}_meta.json",
     )
-    metrics = evaluate(final_model, regime, n_episodes=10, df=df, reward_config=final_config)
+    metrics=evaluate(final_model, regime, n_episodes=10, df=df, reward_config=final_config)
     return {"seed": seed, "regime": regime, "metrics": metrics}
 
 

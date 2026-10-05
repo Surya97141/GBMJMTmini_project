@@ -1,4 +1,4 @@
-"""Collect per-step trajectories from a trained agent, for LSTM diagnosis."""
+# Collect per-step trajectories from a trained agent, for LSTM diagnosis
 from tqdm import tqdm
 
 from env.trading_env import TradingEnv

@@ -1,8 +1,5 @@
-"""
-Statistical analysis of ablation results.
-Computes mean +/- std and Wilcoxon signed-rank test (p-values)
-for each condition pair.
-"""
+# Statistical analysis of ablation results.
+# Computes mean +/- std and the Wilcoxon signed-rank test (p-values) for each condition pair
 import json
 import os
 
@@ -47,6 +44,8 @@ def summarise_ablation(results_path="results/ablation.json"):
             a_vals = summary[artemis_key][regime]["vals"]
             b_vals = summary[cond][regime]["vals"]
             if len(a_vals) >= 5 and len(b_vals) >= 5:
+                # wilcoxon rather than a t-test -- 5 seeds is too small a sample to
+                # safely assume normality, this is the non-parametric paired alternative
                 try:
                     stat, p = wilcoxon(a_vals, b_vals)
                     sig = "YES ***" if p < 0.05 else "no"

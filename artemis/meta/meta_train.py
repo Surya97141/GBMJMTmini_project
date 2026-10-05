@@ -1,13 +1,10 @@
-"""
-Training loop for the SAC meta-policy, plus inference-time application of a trained meta-policy.
-
-NOTE: This is computationally expensive. Each meta-step involves
-finetuning a PPO agent and evaluating it. Reduce meta_timesteps
-and finetune_steps for initial testing.
-
-Recommended for testing:   meta_timesteps=200,  finetune_steps=5000
-Recommended for research:  meta_timesteps=2000, finetune_steps=20000
-"""
+# Training loop for the SAC meta-policy, plus inference-time application of a trained meta-policy.
+#
+# NOTE: this is computationally expensive. Each meta-step involves finetuning a PPO
+# agent and evaluating it. Reduce meta_timesteps and finetune_steps for initial testing.
+#
+#   Recommended for testing:   meta_timesteps=200,  finetune_steps=5000
+#   Recommended for research:  meta_timesteps=2000, finetune_steps=20000
 import copy
 import json
 import os
@@ -87,14 +84,14 @@ def train_meta_policy(
 def run_meta_inference(meta_agent, lstm, base_model, regime, df,
                         n_iters=3, finetune_steps=20000,
                         log_path="logs/meta_inference.json"):
-    """Apply a trained meta-policy to iteratively improve a PPO agent. This is what runs at demo time."""
+    # apply a trained meta-policy to iteratively improve a PPO agent -- this is what runs at demo time
     from agent.collect import collect_episodes
     from agent.evaluate import evaluate
     from agent.train import finetune
     from diagnostics.diagnose import diagnose_episodes
 
     model = copy.deepcopy(base_model)
-    reward_config = DEFAULT_REWARD_CONFIG.copy()
+    reward_config=DEFAULT_REWARD_CONFIG.copy()
     log = []
 
     # Reuses MetaEnv's own _build_obs so the observation the meta-policy sees here is

@@ -1,4 +1,4 @@
-"""Generate labelled (trajectory -> failure_mode, fix_type) training data for the diagnostic LSTM."""
+# Generate labelled (trajectory -> failure_mode, fix_type) training data for the diagnostic LSTM
 import os
 from collections import Counter
 
@@ -23,6 +23,8 @@ BROKEN_ENV_MAP = {
 
 
 def generate_lstm_training_data(model, df, n_per_class=50, output_path="data/edt_train.npz"):
+    # for each failure mode, run the given model through the matching broken-reward env
+    # and record its trajectory -- this is how we manufacture labelled training data
     X, y_failure, y_fix = [], [], []
     for failure_mode, EnvClass in BROKEN_ENV_MAP.items():
         fix_type = FAILURE_TO_FIX[failure_mode]

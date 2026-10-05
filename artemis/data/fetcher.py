@@ -1,4 +1,4 @@
-"""NIFTY 50 + cross-market data acquisition and feature engineering for research-grade ARTEMIS."""
+# NIFTY 50 + cross-market data acquisition and feature engineering for research-grade ARTEMIS
 import argparse
 import os
 
@@ -14,7 +14,7 @@ NORM_COLS = ["Close", "rsi", "macd_signal", "bb_position", "ema_distance", "volu
 
 
 def raw_close(df: pd.DataFrame) -> pd.Series:
-    """Real (un-normalised) Close price, whether or not `df` has been min-max scaled."""
+    # real (un-normalised) close price, whether or not df has been min-max scaled
     return df["Close_raw"] if "Close_raw" in df.columns else df["Close"]
 
 
@@ -34,7 +34,7 @@ class DataPipeline:
     }
 
     def __init__(self):
-        self._min = None
+        self._min=None
         self._max = None
 
     def fetch_raw(self, start: str, end: str, ticker: str = None) -> pd.DataFrame:

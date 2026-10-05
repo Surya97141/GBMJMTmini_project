@@ -1,4 +1,4 @@
-"""PPO training and fine-tuning for the research-grade ARTEMIS agent."""
+# PPO training and fine-tuning for the research-grade ARTEMIS agent
 import os
 import time
 
@@ -29,6 +29,7 @@ def make_env(df, reward_config=None):
 
 
 def train(regime, reward_config=None, total_timesteps=500000, save_path=None, df=None, seed=SEED) -> PPO:
+    # train from scratch on the given regime's data (or a pre-loaded df, if one is passed in)
     if df is None:
         df = DataPipeline().get_regime(regime)
     env = DummyVecEnv([make_env(df, reward_config)])

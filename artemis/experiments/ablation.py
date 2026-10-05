@@ -1,14 +1,11 @@
-"""
-Runs all four ablation conditions and saves results.
-
-Condition A: PPO only -- no diagnostics, no reward engineering
-Condition B: PPO + hand-coded fixes (FIX_APPLICATORS)
-Condition C: PPO + LSTM + random fix selection
-Condition D: PPO + LSTM + SAC meta-policy (full ARTEMIS)
-
-Each condition runs with N_SEEDS seeds.
-Results saved to results/ablation.json.
-"""
+# Runs all four ablation conditions and saves results.
+#
+#   Condition A: PPO only -- no diagnostics, no reward engineering
+#   Condition B: PPO + hand-coded fixes (FIX_APPLICATORS)
+#   Condition C: PPO + LSTM + random fix selection
+#   Condition D: PPO + LSTM + SAC meta-policy (full ARTEMIS)
+#
+# Each condition runs with N_SEEDS seeds. Results saved to results/ablation.json
 import json
 import os
 
@@ -50,6 +47,9 @@ def run_condition_b(regime, df, seed, lstm):
 
 
 def run_condition_c(regime, df, seed, lstm):
+    # the critical control -- picks a fix blindly, ignoring the LSTM's diagnosis entirely.
+    # if D beats C by a real margin, that's evidence the diagnosis itself matters, not
+    # just that extra finetuning rounds happen to help regardless of which fix is applied
     import random
 
     from agent.evaluate import evaluate
@@ -84,7 +84,7 @@ def run_full_ablation(meta_agent_path="models/meta/sac_meta_policy.zip",
     from meta.meta_agent import load_meta_agent
 
     regimes = regimes or REGIMES
-    lstm = load_lstm()
+    lstm=load_lstm()
     meta_agent = load_meta_agent(meta_agent_path)
     pipeline = DataPipeline()
     results = {cond: {regime: [] for regime in regimes}

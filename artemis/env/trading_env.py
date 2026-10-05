@@ -1,4 +1,4 @@
-"""Research-grade gymnasium trading environment for NIFTY 50 with a tunable, bounded reward function."""
+# Research-grade gymnasium trading environment for NIFTY 50 with a tunable, bounded reward function
 import numpy as np
 import gymnasium
 from gymnasium import spaces
@@ -56,6 +56,7 @@ class TradingEnv(gymnasium.Env):
         return self._get_obs(), {}
 
     def _price(self, idx: int) -> float:
+        # trade on the real rupee price, not the normalised feature -- see data.fetcher.raw_close
         return float(raw_close(self.df).iloc[idx])
 
     def step(self, action):
@@ -157,7 +158,7 @@ class TradingEnv(gymnasium.Env):
         ], dtype=np.float32)
 
     def render(self):
-        pass
+        pass  # no rendering support needed for this project
 
     def get_trajectory(self):
         max_drawdown = max((s["drawdown"] for s in self.trajectory), default=0.0)

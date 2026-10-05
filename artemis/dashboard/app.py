@@ -1,4 +1,4 @@
-"""ARTEMIS Research dashboard: performance, robustness, attention XAI, ablation, meta-policy, cross-market."""
+# ARTEMIS Research dashboard - performance, robustness, attention XAI, ablation, meta-policy, cross-market
 import datetime
 import json
 import os
@@ -27,7 +27,7 @@ from diagnostics.lstm_model import FAILURE_MODES
 from env.trading_env import REWARD_CONFIG_BOUNDS, TradingEnv
 from reward.fix_applicators import DEFAULT_REWARD_CONFIG, apply_fix, describe_fix
 
-SEED = 42
+SEED=42
 
 st.set_page_config(page_title="ARTEMIS Research", layout="wide")
 st.title("ARTEMIS Research : Autonomous Reinforcement Trading Dashboard")
@@ -74,7 +74,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "Ablation Study Results",
     "Meta-Policy Training",
     "Cross-Market Generalization",
-    "🎛️ Reward Sandbox",
+    "Reward Sandbox",
 ])
 
 # ---------------------------------------------------------------------------
@@ -149,7 +149,7 @@ with tab3:
     st.subheader("Episode Replay + Attention")
     demo_path = "logs/demo_episodes.json"
     if not os.path.exists(demo_path):
-        st.info("No demo episodes found at logs/demo_episodes.json — generate some with agent.collect + diagnostics.diagnose first.")
+        st.info("blank")
     else:
         with open(demo_path) as f:
             demo_episodes = json.load(f)
@@ -269,7 +269,7 @@ with tab5:
     ablation_path = "results/ablation.json"
     stats_path = "results/stats_report.json"
     if not os.path.exists(ablation_path):
-        st.info("Run experiments/ablation.py to generate this (expensive — see README for cost estimate)")
+        st.info("(expensive — see README for cost estimate)")
     else:
         with open(ablation_path) as f:
             ablation = json.load(f)
@@ -371,11 +371,11 @@ REWARD_LABELS = {
 
 
 def _run_sandbox_episode(model, df, reward_config):
-    """Runs one real (deterministic) episode with the frozen model, using a custom
-    reward_config. The agent's trading DECISIONS don't change (same model, same
-    observations -- reward_config never feeds into what the policy sees), but the
-    real cash transaction_cost and the recorded reward signal do change, which is
-    exactly what lets this be a meaningful live demo without any retraining."""
+    # runs one real (deterministic) episode with the frozen model using a custom reward_config.
+    # the agent's trading decisions don't change here -- same model, same observations, and
+    # reward_config never feeds into what the policy actually sees. but the real transaction_cost
+    # and the recorded reward signal DO change, which is what makes this demo meaningful without
+    # having to retrain anything live
     env = TradingEnv(df, reward_config=reward_config)
     obs, _ = env.reset()
     done = False
@@ -392,7 +392,7 @@ def _run_sandbox_episode(model, df, reward_config):
 
 
 with tab8:
-    st.subheader("🎛️ Reward Sandbox — tweak the reward weights and watch it play out live")
+    st.subheader("Reward Sandbox — tweak the reward weights and watch it play out live")
     st.caption(
         "The trained agent's trading decisions are frozen (same brain, same market signals in). "
         "What changes when you move these sliders: the real transaction cost deducted on every "
@@ -428,7 +428,7 @@ with tab8:
                 )
             st.session_state["sandbox_config"] = custom_config
 
-            run_clicked = st.button("▶ Run Episode With These Settings", type="primary")
+            run_clicked = st.button("Run Episode With These Settings", type="primary")
 
         with col_results:
             if run_clicked:
@@ -481,7 +481,7 @@ with tab8:
                                 f"confidence {diag['failure_confidence']:.0%}</div>",
                                 unsafe_allow_html=True,
                             )
-                    if diag_default["failure_mode"] != diag_custom["failure_mode"]:
+                    if diag_default["failure_mode"]!=diag_custom["failure_mode"]:
                         st.success(
                             f"Diagnosis changed from **{diag_default['failure_mode']}** to "
                             f"**{diag_custom['failure_mode']}** purely from your slider settings — "

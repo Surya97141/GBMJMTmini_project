@@ -1,4 +1,4 @@
-"""Supervised training loop for the attention-augmented episode diagnostic LSTM."""
+# Supervised training loop for the attention-augmented episode diagnostic LSTM
 import os
 
 # scikit-learn and PyTorch each bundle their own OpenMP runtime; loading both
@@ -46,8 +46,8 @@ def train_lstm(data_path="data/edt_train.npz", save_path="models/lstm/lstm_model
     dataset = torch.utils.data.TensorDataset(tr_X, tr_yf, tr_yx)
     loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
-    best_val_acc = 0.0
-    best_state = None
+    best_val_acc=0.0
+    best_state = None  # snapshot of weights from the best epoch so far, saved at the end
 
     for epoch in range(1, epochs + 1):
         model.train()
