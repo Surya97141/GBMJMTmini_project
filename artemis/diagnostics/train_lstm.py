@@ -1,6 +1,15 @@
 """Supervised training loop for the attention-augmented episode diagnostic LSTM."""
 import os
 
+# scikit-learn and PyTorch each bundle their own OpenMP runtime; loading both
+# in one process on Windows causes a duplicate-runtime conflict that can
+# segfault during the LSTM forward pass. These must be set before numpy/
+# torch/sklearn are imported, since the native libraries read them at
+# import/init time, not at first use.
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+os.environ.setdefault("OMP_NUM_THREADS", "1")
+os.environ.setdefault("MKL_NUM_THREADS", "1")
+
 import numpy as np
 import torch
 import torch.nn as nn

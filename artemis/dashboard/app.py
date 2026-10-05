@@ -11,15 +11,16 @@ from plotly.subplots import make_subplots
 
 from agent.collect import collect_episodes
 from agent.evaluate import benchmark_buy_and_hold
-from data.fetcher import DataPipeline
+from data.fetcher import DataPipeline, raw_close
 from diagnostics.diagnose import diagnose_episodes, load_lstm
 from diagnostics.lstm_model import FAILURE_MODES
+from env.trading_env import REWARD_CONFIG_BOUNDS, TradingEnv
 from reward.fix_applicators import DEFAULT_REWARD_CONFIG, apply_fix, describe_fix
 
 SEED = 42
 
 st.set_page_config(page_title="ARTEMIS Research", layout="wide")
-st.title("ARTEMIS Research — Autonomous Reinforcement Trading Dashboard")
+st.title("ARTEMIS Research : Autonomous Reinforcement Trading Dashboard")
 
 REGIMES = ["bull", "bear", "sideways"]
 
@@ -55,7 +56,7 @@ def load_sac_meta_agent():
     return load_meta_agent(path)
 
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "Portfolio Performance",
     "Regime Robustness Grid",
     "Episode Replay + Attention",
@@ -63,6 +64,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "Ablation Study Results",
     "Meta-Policy Training",
     "Cross-Market Generalization",
+    "🎛️ Reward Sandbox",
 ])
 
 # ---------------------------------------------------------------------------
@@ -344,3 +346,138 @@ with tab7:
                     ", ".join(sorted(failure_modes_seen)) or "none recorded",
                     key=f"failtext_{market}",
                 )
+
+# ---------------------------------------------------------------------------
+# Tab 8: Reward Sandbox -- live, interactive reward-shaping demo
+# ---------------------------------------------------------------------------
+REWARD_LABELS = {
+    "return_weight": ("Return weight", "How much the AI is rewarded for making money. Higher = cares more about profit."),
+    "transaction_cost": ("Transaction cost", "Penalty per trade. More negative = trading costs more (this actually reduces real rupee returns, not just the training signal)."),
+    "drawdown_penalty": ("Drawdown penalty", "How harshly a dip below the portfolio's peak value is punished. More negative = more risk-averse, panickier agent."),
+    "holding_bonus": ("Holding bonus", "Reward for continuing to hold a position that's currently winning."),
+    "profit_take_bonus": ("Profit-take bonus", "Reward for selling while sitting on a profit, i.e. locking in gains."),
+    "sharpe_bonus": ("Sharpe bonus", "Reward for smooth, consistent day-to-day returns rather than wild swings."),
+}
+
+
+def _run_sandbox_episode(model, df, reward_config):
+    """Runs one real (deterministic) episode with the frozen model, using a custom
+    reward_config. The agent's trading DECISIONS don't change (same model, same
+    observations -- reward_config never feeds into what the policy sees), but the
+    real cash transaction_cost and the recorded reward signal do change, which is
+    exactly what lets this be a meaningful live demo without any retraining."""
+    env = TradingEnv(df, reward_config=reward_config)
+    obs, _ = env.reset()
+    done = False
+    while not done:
+        action, _ = model.predict(obs, deterministic=True)
+        obs, _, terminated, truncated, _ = env.step(int(action))
+        done = terminated or truncated
+    traj = env.get_trajectory()
+    traj["trade_log"] = env.trade_log
+    traj["portfolio_values"] = [100.0]
+    for s in traj["steps"]:
+        traj["portfolio_values"].append(traj["portfolio_values"][-1] * (1 + s["daily_return"]))
+    return traj
+
+
+with tab8:
+    st.subheader("🎛️ Reward Sandbox — tweak the reward weights and watch it play out live")
+    st.caption(
+        "The trained agent's trading decisions are frozen (same brain, same market signals in). "
+        "What changes when you move these sliders: the real transaction cost deducted on every "
+        "trade, and the reward signal fed to the diagnostic LSTM -- so you can watch the economic "
+        "outcome AND the diagnosis change in response to the exact same trading session."
+    )
+
+    sb_regime = st.selectbox("Select regime", REGIMES, key="sandbox_regime")
+    sb_model = load_ppo_model(sb_regime)
+    sb_lstm = load_diagnostic_lstm()
+
+    if sb_model is None:
+        st.info(f"No trained model found at models/{sb_regime}_ppo_seed42.zip — train one first.")
+    else:
+        if "sandbox_config" not in st.session_state:
+            st.session_state["sandbox_config"] = DEFAULT_REWARD_CONFIG.copy()
+
+        col_sliders, col_results = st.columns([1, 2])
+
+        with col_sliders:
+            st.markdown("**Reward weights**")
+            if st.button("Reset to default"):
+                st.session_state["sandbox_config"] = DEFAULT_REWARD_CONFIG.copy()
+
+            custom_config = {}
+            for key, (label, help_text) in REWARD_LABELS.items():
+                lo, hi = REWARD_CONFIG_BOUNDS[key]
+                step = (hi - lo) / 100.0
+                custom_config[key] = st.slider(
+                    label, min_value=float(lo), max_value=float(hi),
+                    value=float(st.session_state["sandbox_config"][key]),
+                    step=float(step), help=help_text, key=f"sb_{key}",
+                )
+            st.session_state["sandbox_config"] = custom_config
+
+            run_clicked = st.button("▶ Run Episode With These Settings", type="primary")
+
+        with col_results:
+            if run_clicked:
+                df = load_regime_df(sb_regime)
+                default_traj = _run_sandbox_episode(sb_model, df, DEFAULT_REWARD_CONFIG)
+                custom_traj = _run_sandbox_episode(sb_model, df, custom_config)
+                st.session_state["sandbox_results"] = (default_traj, custom_traj)
+
+            if "sandbox_results" in st.session_state:
+                default_traj, custom_traj = st.session_state["sandbox_results"]
+
+                c1, c2, c3, c4 = st.columns(4)
+                c1.metric("Return (default)", f"{default_traj['total_return']*100:.2f}%")
+                c2.metric("Return (yours)", f"{custom_traj['total_return']*100:.2f}%",
+                           delta=f"{(custom_traj['total_return']-default_traj['total_return'])*100:.2f}%")
+                c3.metric("Max drawdown (yours)", f"{custom_traj['max_drawdown']:.2%}")
+                c4.metric("Trades (yours)", custom_traj["num_trades"])
+
+                fig = go.Figure()
+                fig.add_trace(go.Scatter(y=default_traj["portfolio_values"], mode="lines",
+                                          name="Default config", line=dict(dash="dash", color="gray")))
+                fig.add_trace(go.Scatter(y=custom_traj["portfolio_values"], mode="lines",
+                                          name="Your config", line=dict(color="royalblue")))
+                fig.update_layout(title="Portfolio value: default vs. your settings (base=100)",
+                                   xaxis_title="Trading day", yaxis_title="Value")
+                st.plotly_chart(fig, use_container_width=True)
+
+                fig2 = go.Figure()
+                fig2.add_trace(go.Scatter(y=[s["reward"] for s in default_traj["steps"]], mode="lines",
+                                           name="Default reward signal", line=dict(dash="dash", color="gray")))
+                fig2.add_trace(go.Scatter(y=[s["reward"] for s in custom_traj["steps"]], mode="lines",
+                                           name="Your reward signal", line=dict(color="orange")))
+                fig2.update_layout(title="Per-step reward signal (what the LSTM actually reads)",
+                                    xaxis_title="Trading day", yaxis_title="Reward")
+                st.plotly_chart(fig2, use_container_width=True)
+
+                if sb_lstm is not None:
+                    diag_default = diagnose_episodes(sb_lstm, [default_traj])[0]
+                    diag_custom = diagnose_episodes(sb_lstm, [custom_traj])[0]
+                    dc1, dc2 = st.columns(2)
+                    for col, label, diag in [(dc1, "Default config diagnosis", diag_default),
+                                              (dc2, "Your config diagnosis", diag_custom)]:
+                        with col:
+                            color = ("green" if diag["failure_mode"] == "PROFITABLE"
+                                     else "red" if diag["failure_mode"] == "MAX_DRAWDOWN" else "orange")
+                            st.markdown(
+                                f"<div style='background-color:{color};color:white;padding:10px;"
+                                f"border-radius:8px;text-align:center;'>{label}<br>"
+                                f"<span style='font-size:20px'>{diag['failure_mode']}</span><br>"
+                                f"confidence {diag['failure_confidence']:.0%}</div>",
+                                unsafe_allow_html=True,
+                            )
+                    if diag_default["failure_mode"] != diag_custom["failure_mode"]:
+                        st.success(
+                            f"Diagnosis changed from **{diag_default['failure_mode']}** to "
+                            f"**{diag_custom['failure_mode']}** purely from your slider settings — "
+                            f"same agent, same market data, different reward shaping."
+                        )
+                else:
+                    st.caption("Train the diagnostic LSTM to see live diagnosis here too.")
+            else:
+                st.info("Adjust the sliders and click Run Episode to see the effect.")

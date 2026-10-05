@@ -1,0 +1,2602 @@
+[
+  {
+    "step": 1,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1643736362457275,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.28484123945236206,
+      "holding_bonus": 0.16842086613178253,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.38537338376045227
+    }
+  },
+  {
+    "step": 2,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3210574388504028,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5079730749130249,
+      "holding_bonus": 0.13865242898464203,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 3,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.4073765277862549,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5419245958328247,
+      "holding_bonus": -0.025004342198371887,
+      "profit_take_bonus": 0.032750874757766724,
+      "sharpe_bonus": 0.23829033970832825
+    }
+  },
+  {
+    "step": 4,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.6039552688598633,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.38707196712493896,
+      "holding_bonus": -0.11228875815868378,
+      "profit_take_bonus": 0.31516966223716736,
+      "sharpe_bonus": 0.4741630256175995
+    }
+  },
+  {
+    "step": 5,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.7709853649139404,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.4070393741130829,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.10774335265159607,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 6,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1468572616577148,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6045047640800476,
+      "holding_bonus": -0.027724172919988632,
+      "profit_take_bonus": 0.18173350393772125,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 7,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.9248101711273193,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7683591842651367,
+      "holding_bonus": 0.07416427135467529,
+      "profit_take_bonus": 0.14402465522289276,
+      "sharpe_bonus": 0.19960692524909973
+    }
+  },
+  {
+    "step": 8,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0449692010879517,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5690032839775085,
+      "holding_bonus": 0.257022887468338,
+      "profit_take_bonus": 0.0765116810798645,
+      "sharpe_bonus": 0.07260376214981079
+    }
+  },
+  {
+    "step": 9,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1544665098190308,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7490583658218384,
+      "holding_bonus": -0.03855976462364197,
+      "profit_take_bonus": 0.24866631627082825,
+      "sharpe_bonus": 0.17151427268981934
+    }
+  },
+  {
+    "step": 10,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2775657176971436,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7737089395523071,
+      "holding_bonus": 0.002684950828552246,
+      "profit_take_bonus": 0.03254450857639313,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 11,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1010417938232422,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.4608583450317383,
+      "holding_bonus": 0.20899932086467743,
+      "profit_take_bonus": 0.280830979347229,
+      "sharpe_bonus": 0.1321476399898529
+    }
+  },
+  {
+    "step": 12,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.280061798513013,
+    "reward_config": {
+      "return_weight": 1.136566162109375,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7423676252365112,
+      "holding_bonus": 0.17102976143360138,
+      "profit_take_bonus": 0.10958178341388702,
+      "sharpe_bonus": 0.07726481556892395
+    }
+  },
+  {
+    "step": 13,
+    "sharpe_before": 2.280061798513013,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.3486080169677734,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.0073859691619873,
+      "holding_bonus": 0.039860084652900696,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.174414724111557
+    }
+  },
+  {
+    "step": 14,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3828272819519043,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.9087978601455688,
+      "holding_bonus": -0.016307801008224487,
+      "profit_take_bonus": 0.18841224908828735,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 15,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0964545011520386,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7753822803497314,
+      "holding_bonus": -0.03918147087097168,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0006268620491027832
+    }
+  },
+  {
+    "step": 16,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7913872599601746,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5323061943054199,
+      "holding_bonus": -0.021387260407209396,
+      "profit_take_bonus": 0.08090725541114807,
+      "sharpe_bonus": 0.17816954851150513
+    }
+  },
+  {
+    "step": 17,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7084748148918152,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7615026235580444,
+      "holding_bonus": 0.2557514011859894,
+      "profit_take_bonus": 0.3260556757450104,
+      "sharpe_bonus": 0.29799383878707886
+    }
+  },
+  {
+    "step": 18,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.5679967403411865,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5942521095275879,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.29567256569862366,
+      "sharpe_bonus": 0.16133877635002136
+    }
+  },
+  {
+    "step": 19,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.3258312940597534,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6207863092422485,
+      "holding_bonus": 0.12141802906990051,
+      "profit_take_bonus": 0.17924654483795166,
+      "sharpe_bonus": 0.208870530128479
+    }
+  },
+  {
+    "step": 20,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.13189494609832764,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.46567457914352417,
+      "holding_bonus": 0.253095805644989,
+      "profit_take_bonus": 0.1385023593902588,
+      "sharpe_bonus": 0.2852558493614197
+    }
+  },
+  {
+    "step": 21,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.0504587888717651,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.749333381652832,
+      "holding_bonus": -0.0005155615508556366,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.09639448672533035
+    }
+  },
+  {
+    "step": 22,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.9483755230903625,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.9872915744781494,
+      "holding_bonus": 0.05207117274403572,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.3514665365219116
+    }
+  },
+  {
+    "step": 23,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.997012197971344,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.9327422380447388,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.2751355767250061,
+      "sharpe_bonus": 0.3408485949039459
+    }
+  },
+  {
+    "step": 24,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1666533946990967,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.9407472610473633,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.5378314256668091,
+      "sharpe_bonus": 0.3838854134082794
+    }
+  },
+  {
+    "step": 25,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1507470607757568,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.0418058633804321,
+      "holding_bonus": -0.18759657442569733,
+      "profit_take_bonus": 0.5011782646179199,
+      "sharpe_bonus": 0.09685266017913818
+    }
+  },
+  {
+    "step": 26,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1957751512527466,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7158505916595459,
+      "holding_bonus": 0.08242167532444,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.20334404706954956
+    }
+  },
+  {
+    "step": 27,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.0645153522491455,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.579653799533844,
+      "holding_bonus": 0.24361012876033783,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.45295119285583496
+    }
+  },
+  {
+    "step": 28,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.9026437401771545,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.54674232006073,
+      "holding_bonus": 0.16616348922252655,
+      "profit_take_bonus": 0.19787386059761047,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 29,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.792927086353302,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6721916198730469,
+      "holding_bonus": 0.1751977652311325,
+      "profit_take_bonus": 0.05145290493965149,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 30,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.5916917324066162,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7111333608627319,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.2864592969417572,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 31,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2344754934310913,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.4886849820613861,
+      "holding_bonus": -0.06044256314635277,
+      "profit_take_bonus": 0.36320745944976807,
+      "sharpe_bonus": 0.1969967484474182
+    }
+  },
+  {
+    "step": 32,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.15867018699646,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.34061118960380554,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.6252953410148621,
+      "sharpe_bonus": 0.04157906770706177
+    }
+  },
+  {
+    "step": 33,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9323248863220215,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5486406087875366,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.6849250197410583,
+      "sharpe_bonus": 0.266316294670105
+    }
+  },
+  {
+    "step": 34,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7501856684684753,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.38219770789146423,
+      "holding_bonus": 0.08309589326381683,
+      "profit_take_bonus": 0.6853697299957275,
+      "sharpe_bonus": 0.05265478789806366
+    }
+  },
+  {
+    "step": 35,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.280061798513013,
+    "reward_config": {
+      "return_weight": 0.458547443151474,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.6031043529510498,
+      "holding_bonus": 0.18969111144542694,
+      "profit_take_bonus": 0.4584692418575287,
+      "sharpe_bonus": 0.056452736258506775
+    }
+  },
+  {
+    "step": 36,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1165574789047241,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6801345944404602,
+      "holding_bonus": 0.23247472941875458,
+      "profit_take_bonus": 0.32924431562423706,
+      "sharpe_bonus": 0.24339044094085693
+    }
+  },
+  {
+    "step": 37,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8951921463012695,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.4235970973968506,
+      "holding_bonus": 0.17102164030075073,
+      "profit_take_bonus": 0.20981353521347046,
+      "sharpe_bonus": 0.23654085397720337
+    }
+  },
+  {
+    "step": 38,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9929106831550598,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5517293810844421,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.2696596682071686
+    }
+  },
+  {
+    "step": 39,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0732957124710083,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7675256133079529,
+      "holding_bonus": 0.25146859884262085,
+      "profit_take_bonus": 0.2797392010688782,
+      "sharpe_bonus": 0.32728520035743713
+    }
+  },
+  {
+    "step": 40,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3331096172332764,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7870966196060181,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.09277158975601196
+    }
+  },
+  {
+    "step": 41,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1976571083068848,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.660415530204773,
+      "holding_bonus": 0.06846176087856293,
+      "profit_take_bonus": 0.26360946893692017,
+      "sharpe_bonus": 0.3206433951854706
+    }
+  },
+  {
+    "step": 42,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2595213651657104,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.735905110836029,
+      "holding_bonus": 0.02399100363254547,
+      "profit_take_bonus": 0.3547680974006653,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 43,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2318594455718994,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.8939076662063599,
+      "holding_bonus": 0.1715995818376541,
+      "profit_take_bonus": 0.5447093844413757,
+      "sharpe_bonus": 0.2631668448448181
+    }
+  },
+  {
+    "step": 44,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9717947244644165,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -1.1062037944793701,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.4309101700782776,
+      "sharpe_bonus": 0.04948997497558594
+    }
+  },
+  {
+    "step": 45,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.224376916885376,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.2353718280792236,
+      "holding_bonus": 0.09216803312301636,
+      "profit_take_bonus": 0.20020419359207153,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 46,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7332372665405273,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.767970860004425,
+      "holding_bonus": 0.10468630492687225,
+      "profit_take_bonus": 0.3084287643432617,
+      "sharpe_bonus": 0.03617826849222183
+    }
+  },
+  {
+    "step": 47,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.290917259832507,
+    "reward_config": {
+      "return_weight": 0.6240319013595581,
+      "transaction_cost": -0.0072842929512262344,
+      "drawdown_penalty": -0.5429679155349731,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.03451380133628845,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 48,
+    "sharpe_before": 2.290917259832507,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.46607881784439087,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5002282857894897,
+      "holding_bonus": 0.24975745379924774,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 49,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.48033058643341064,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.30015313625335693,
+      "holding_bonus": -0.01906542479991913,
+      "profit_take_bonus": 0.25490516424179077,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 50,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.6864755749702454,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.01241070032119751,
+      "holding_bonus": 0.16215009987354279,
+      "profit_take_bonus": 0.4225916862487793,
+      "sharpe_bonus": 0.08548995852470398
+    }
+  },
+  {
+    "step": 51,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9093112349510193,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.21695423126220703,
+      "holding_bonus": 0.13690908253192902,
+      "profit_take_bonus": 0.4153907299041748,
+      "sharpe_bonus": 0.14756610989570618
+    }
+  },
+  {
+    "step": 52,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.6207739114761353,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5011763572692871,
+      "holding_bonus": 0.12798093259334564,
+      "profit_take_bonus": 0.6949132084846497,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 53,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.6663377285003662,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5355912446975708,
+      "holding_bonus": -0.06517060101032257,
+      "profit_take_bonus": 0.970863401889801,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 54,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.4612261652946472,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7535232305526733,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.8486659526824951,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 55,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.171807199716568,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7176507711410522,
+      "holding_bonus": -0.10052745044231415,
+      "profit_take_bonus": 0.6470381617546082,
+      "sharpe_bonus": 0.27995359897613525
+    }
+  },
+  {
+    "step": 56,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2251548767089844,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.2858523726463318,
+      "holding_bonus": 0.27737587690353394,
+      "profit_take_bonus": 0.08113463222980499,
+      "sharpe_bonus": 0.06546510010957718
+    }
+  },
+  {
+    "step": 57,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.4496397972106934,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.24052101373672485,
+      "holding_bonus": 0.10207340121269226,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 58,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.5796798467636108,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.011110961437225342,
+      "sharpe_bonus": 0.03854656219482422
+    }
+  },
+  {
+    "step": 59,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.5249603986740112,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.056486278772354126,
+      "sharpe_bonus": 0.08381593227386475
+    }
+  },
+  {
+    "step": 60,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.7384893894195557,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.2382127344608307,
+      "holding_bonus": 0.1311948299407959,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.2518576681613922
+    }
+  },
+  {
+    "step": 61,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.181755542755127,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7138035893440247,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.059412553906440735,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 62,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.073085904121399,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8116809129714966,
+      "holding_bonus": 0.09180557727813721,
+      "profit_take_bonus": 0.0396508127450943,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 63,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.3274859189987183,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.8077532052993774,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 64,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2287497520446777,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8995625972747803,
+      "holding_bonus": 0.14369332790374756,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 65,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9340589642524719,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -1.1182197332382202,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.2642472982406616
+    }
+  },
+  {
+    "step": 66,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8151884078979492,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7760119438171387,
+      "holding_bonus": -0.150015190243721,
+      "profit_take_bonus": 0.060014113783836365,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 67,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8291011452674866,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5871120691299438,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 68,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.680277407169342,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.46778368949890137,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.13998880982398987,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 69,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7237085103988647,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.2649655342102051,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.14579448103904724,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 70,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9933037757873535,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.060185015201568604,
+      "holding_bonus": -0.19080038368701935,
+      "profit_take_bonus": 0.37374189496040344,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 71,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2330574989318848,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.719386875629425,
+      "holding_bonus": 0.27891993522644043,
+      "profit_take_bonus": 0.34661877155303955,
+      "sharpe_bonus": 0.058915771543979645
+    }
+  },
+  {
+    "step": 72,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.3189520664160286,
+    "reward_config": {
+      "return_weight": 1.414613127708435,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5474338531494141,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.23669952154159546,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 73,
+    "sharpe_before": 2.3189520664160286,
+    "sharpe_after": 2.280061798513013,
+    "reward_config": {
+      "return_weight": 1.5741007328033447,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7117072343826294,
+      "holding_bonus": 0.22942903637886047,
+      "profit_take_bonus": 0.42722785472869873,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 74,
+    "sharpe_before": 2.280061798513013,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.7767856121063232,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.8860290050506592,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.34209302067756653,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 75,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.7689850330352783,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8918341398239136,
+      "holding_bonus": 0.21555909514427185,
+      "profit_take_bonus": 0.4883915185928345,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 76,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.3189520664160286,
+    "reward_config": {
+      "return_weight": 0.9422726631164551,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.48657095432281494,
+      "holding_bonus": -0.08222454786300659,
+      "profit_take_bonus": 0.3617064356803894,
+      "sharpe_bonus": 0.00205434113740921
+    }
+  },
+  {
+    "step": 77,
+    "sharpe_before": 2.3189520664160286,
+    "sharpe_after": 2.280061798513013,
+    "reward_config": {
+      "return_weight": 0.8298237919807434,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.287136971950531,
+      "holding_bonus": -0.0709502100944519,
+      "profit_take_bonus": 0.4629235565662384,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 78,
+    "sharpe_before": 2.280061798513013,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1034908294677734,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5278401374816895,
+      "holding_bonus": 0.0009106099605560303,
+      "profit_take_bonus": 0.23863503336906433,
+      "sharpe_bonus": 0.129804790019989
+    }
+  },
+  {
+    "step": 79,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1318439245224,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5151424407958984,
+      "holding_bonus": 0.05333855748176575,
+      "profit_take_bonus": 0.33683744072914124,
+      "sharpe_bonus": 0.3373180031776428
+    }
+  },
+  {
+    "step": 80,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9684523940086365,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6269845366477966,
+      "holding_bonus": 0.18431082367897034,
+      "profit_take_bonus": 0.17849989235401154,
+      "sharpe_bonus": 0.06869626045227051
+    }
+  },
+  {
+    "step": 81,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2721750736236572,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.2621272802352905,
+      "holding_bonus": 0.19560672342777252,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0035961493849754333
+    }
+  },
+  {
+    "step": 82,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0874487161636353,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.542582094669342,
+      "holding_bonus": 0.18213249742984772,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 83,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2249928712844849,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7319693565368652,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 84,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9479912519454956,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.798486590385437,
+      "holding_bonus": 0.29159972071647644,
+      "profit_take_bonus": 0.09276941418647766,
+      "sharpe_bonus": 0.22528964281082153
+    }
+  },
+  {
+    "step": 85,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2019025087356567,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.49956607818603516,
+      "holding_bonus": 0.27565523982048035,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 86,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.9173754453659058,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.6971526741981506,
+      "holding_bonus": -0.005422215908765793,
+      "profit_take_bonus": 0.18875272572040558,
+      "sharpe_bonus": 0.006422050297260284
+    }
+  },
+  {
+    "step": 87,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.3189520664160286,
+    "reward_config": {
+      "return_weight": 0.6343307495117188,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.40867727994918823,
+      "holding_bonus": 0.1946658045053482,
+      "profit_take_bonus": 0.15468598902225494,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 88,
+    "sharpe_before": 2.3189520664160286,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.4102785587310791,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.17749476432800293,
+      "holding_bonus": 0.26849496364593506,
+      "profit_take_bonus": 0.16307426989078522,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 89,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.572867751121521,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.15288659930229187,
+      "holding_bonus": 0.06658178567886353,
+      "profit_take_bonus": 0.21409966051578522,
+      "sharpe_bonus": 0.06364065408706665
+    }
+  },
+  {
+    "step": 90,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.49256768822669983,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.20884060859680176,
+      "holding_bonus": 0.26792776584625244,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.1043052077293396
+    }
+  },
+  {
+    "step": 91,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.828344464302063,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.4099033772945404,
+      "holding_bonus": -0.07113561034202576,
+      "profit_take_bonus": 0.09235574305057526,
+      "sharpe_bonus": 0.12621811032295227
+    }
+  },
+  {
+    "step": 92,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7878644466400146,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.47247475385665894,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.19662612676620483
+    }
+  },
+  {
+    "step": 93,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8957984447479248,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7038245797157288,
+      "holding_bonus": 0.029872700572013855,
+      "profit_take_bonus": 0.1607370674610138,
+      "sharpe_bonus": 0.17154857516288757
+    }
+  },
+  {
+    "step": 94,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8723224401473999,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.9531078338623047,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.20507630705833435,
+      "sharpe_bonus": 0.36681386828422546
+    }
+  },
+  {
+    "step": 95,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1453444957733154,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.07597017288208,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.10847029089927673
+    }
+  },
+  {
+    "step": 96,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1984870433807373,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5501148104667664,
+      "holding_bonus": 0.26166021823883057,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.04578530043363571
+    }
+  },
+  {
+    "step": 97,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1171135902404785,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7325055599212646,
+      "holding_bonus": 0.24601280689239502,
+      "profit_take_bonus": 0.013745993375778198,
+      "sharpe_bonus": 0.08266013115644455
+    }
+  },
+  {
+    "step": 98,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.3871691226959229,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.980964183807373,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.2257707417011261
+    }
+  },
+  {
+    "step": 99,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.5704025030136108,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.2540934085845947,
+      "holding_bonus": 0.0195750892162323,
+      "profit_take_bonus": 0.05188268423080444,
+      "sharpe_bonus": 0.48622408509254456
+    }
+  },
+  {
+    "step": 100,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.6442152261734009,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.1226301193237305,
+      "holding_bonus": 0.049482911825180054,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 101,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.152758002281189,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.3090374767780304,
+      "holding_bonus": -0.10914042592048645,
+      "profit_take_bonus": 0.08422161638736725,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 102,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.206068992614746,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.573880672454834,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0023490041494369507,
+      "sharpe_bonus": 0.18967744708061218
+    }
+  },
+  {
+    "step": 103,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2709013223648071,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.8152152299880981,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.041565701365470886,
+      "sharpe_bonus": 0.4056566655635834
+    }
+  },
+  {
+    "step": 104,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.524038314819336,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8399121761322021,
+      "holding_bonus": -0.06712572276592255,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 105,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.6005967855453491,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.0937950611114502,
+      "holding_bonus": 0.04572369158267975,
+      "profit_take_bonus": 0.11269059777259827,
+      "sharpe_bonus": 0.2630641460418701
+    }
+  },
+  {
+    "step": 106,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1324207782745361,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7172935009002686,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.2168327122926712,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 107,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.9182984828948975,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5652647018432617,
+      "holding_bonus": 0.014529511332511902,
+      "profit_take_bonus": 0.30834561586380005,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 108,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.0788369178771973,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.49359846115112305,
+      "holding_bonus": 0.13470973074436188,
+      "profit_take_bonus": 0.30562812089920044,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 109,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2196638584136963,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7471557855606079,
+      "holding_bonus": 0.19440163671970367,
+      "profit_take_bonus": 0.05675730109214783,
+      "sharpe_bonus": 0.00847393274307251
+    }
+  },
+  {
+    "step": 110,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2008092403411865,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6380233764648438,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.3381907641887665,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 111,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7530256509780884,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.2724495530128479,
+      "holding_bonus": -0.06445302069187164,
+      "profit_take_bonus": 0.13737086951732635,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 112,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.6766760349273682,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.04543787240982056,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.055938005447387695
+    }
+  },
+  {
+    "step": 113,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7465944290161133,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.013539910316467285,
+      "holding_bonus": 0.009304270148277283,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.2276703417301178
+    }
+  },
+  {
+    "step": 114,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.47007495164871216,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.286228746175766,
+      "holding_bonus": 0.10242412984371185,
+      "profit_take_bonus": 0.17940831184387207,
+      "sharpe_bonus": 0.382274866104126
+    }
+  },
+  {
+    "step": 115,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.49988558888435364,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5109163522720337,
+      "holding_bonus": -0.07246777415275574,
+      "profit_take_bonus": 0.24995678663253784,
+      "sharpe_bonus": 0.4684774577617645
+    }
+  },
+  {
+    "step": 116,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1776374578475952,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.2585989832878113,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.4871230125427246,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 117,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.418517827987671,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.06796836853027344,
+      "holding_bonus": 0.007790729403495789,
+      "profit_take_bonus": 0.5757746696472168,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 118,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.272560477256775,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.2045203000307083,
+      "holding_bonus": -0.13184969127178192,
+      "profit_take_bonus": 0.47834253311157227,
+      "sharpe_bonus": 0.16892188787460327
+    }
+  },
+  {
+    "step": 119,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1210871934890747,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.010470613837242126,
+      "holding_bonus": -0.0961170643568039,
+      "profit_take_bonus": 0.514752209186554,
+      "sharpe_bonus": 0.13205373287200928
+    }
+  },
+  {
+    "step": 120,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.3598848581314087,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.040676310658454895,
+      "holding_bonus": -0.03461526334285736,
+      "profit_take_bonus": 0.8041133880615234,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 121,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2537522315979004,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7479177713394165,
+      "holding_bonus": -0.011170651763677597,
+      "profit_take_bonus": 0.44531822204589844,
+      "sharpe_bonus": 0.2801005244255066
+    }
+  },
+  {
+    "step": 122,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.4118340015411377,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.553326427936554,
+      "holding_bonus": 0.15623131394386292,
+      "profit_take_bonus": 0.5713104605674744,
+      "sharpe_bonus": 0.12280865013599396
+    }
+  },
+  {
+    "step": 123,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2358323335647583,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.34639739990234375,
+      "holding_bonus": -0.036522507667541504,
+      "profit_take_bonus": 0.48568856716156006,
+      "sharpe_bonus": 0.3295823335647583
+    }
+  },
+  {
+    "step": 124,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.4014618396759033,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.42197132110595703,
+      "holding_bonus": 0.13441896438598633,
+      "profit_take_bonus": 0.5609258413314819,
+      "sharpe_bonus": 0.20417562127113342
+    }
+  },
+  {
+    "step": 125,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.553946614265442,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7040716409683228,
+      "holding_bonus": -0.06054547429084778,
+      "profit_take_bonus": 0.7437689304351807,
+      "sharpe_bonus": 0.04225970804691315
+    }
+  },
+  {
+    "step": 126,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2787458896636963,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.42138782143592834,
+      "holding_bonus": -0.0890999436378479,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.3542079031467438
+    }
+  },
+  {
+    "step": 127,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.0844725370407104,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.18039646744728088,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.06130075454711914,
+      "sharpe_bonus": 0.06578728556632996
+    }
+  },
+  {
+    "step": 128,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8014012575149536,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": -0.18275873363018036,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.13397535681724548
+    }
+  },
+  {
+    "step": 129,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8124112486839294,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.12627583742141724,
+      "holding_bonus": 0.08808542788028717,
+      "profit_take_bonus": 0.2143506407737732,
+      "sharpe_bonus": 0.34379103779792786
+    }
+  },
+  {
+    "step": 130,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7615327835083008,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.23325395584106445,
+      "sharpe_bonus": 0.41629675030708313
+    }
+  },
+  {
+    "step": 131,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2012343406677246,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.3398508131504059,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.33245885372161865,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 132,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3366880416870117,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.10318359732627869,
+      "holding_bonus": 0.08812493085861206,
+      "profit_take_bonus": 0.46401992440223694,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 133,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.371261477470398,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.11617305874824524,
+      "holding_bonus": 0.2945402264595032,
+      "profit_take_bonus": 0.47860580682754517,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 134,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2268584966659546,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": 0.27365732192993164,
+      "profit_take_bonus": 0.4008760154247284,
+      "sharpe_bonus": 0.20344412326812744
+    }
+  },
+  {
+    "step": 135,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.447479009628296,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": -0.0019851326942443848,
+      "profit_take_bonus": 0.543892502784729,
+      "sharpe_bonus": 0.06638835370540619
+    }
+  },
+  {
+    "step": 136,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1876070499420166,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6093565225601196,
+      "holding_bonus": -0.09767965972423553,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.36419788002967834
+    }
+  },
+  {
+    "step": 137,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0239074230194092,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.8577657341957092,
+      "holding_bonus": 0.038676872849464417,
+      "profit_take_bonus": 0.29471397399902344,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 138,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0011867889870056,
+    "reward_config": {
+      "return_weight": 1.0810093879699707,
+      "transaction_cost": -0.00698033906519413,
+      "drawdown_penalty": -1.117461919784546,
+      "holding_bonus": 0.21357379853725433,
+      "profit_take_bonus": 0.02887791395187378,
+      "sharpe_bonus": 0.432115375995636
+    }
+  },
+  {
+    "step": 139,
+    "sharpe_before": 3.0011867889870056,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.293965220451355,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -1.2944676876068115,
+      "holding_bonus": 0.10099969804286957,
+      "profit_take_bonus": 0.16347897052764893,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 140,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.366843819618225,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.4564685821533203,
+      "holding_bonus": 0.08565999567508698,
+      "profit_take_bonus": 0.4061470627784729,
+      "sharpe_bonus": 0.41603177785873413
+    }
+  },
+  {
+    "step": 141,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.121657133102417,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.3906644284725189,
+      "holding_bonus": 0.2797294855117798,
+      "profit_take_bonus": 0.07202458381652832,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 142,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.3189520664160286,
+    "reward_config": {
+      "return_weight": 1.4123833179473877,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.16616180539131165,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.07944720983505249,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 143,
+    "sharpe_before": 2.3189520664160286,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.6071467399597168,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": 0.0,
+      "holding_bonus": 0.18458101153373718,
+      "profit_take_bonus": 0.18387305736541748,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 144,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.5743966102600098,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.26241716742515564,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.4631071090698242,
+      "sharpe_bonus": 0.22862166166305542
+    }
+  },
+  {
+    "step": 145,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.4873789548873901,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.41676032543182373,
+      "holding_bonus": 0.22817645967006683,
+      "profit_take_bonus": 0.604668378829956,
+      "sharpe_bonus": 0.07715427875518799
+    }
+  },
+  {
+    "step": 146,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7692089080810547,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7211066484451294,
+      "holding_bonus": -0.17523778975009918,
+      "profit_take_bonus": 0.10240890085697174,
+      "sharpe_bonus": 0.2578580975532532
+    }
+  },
+  {
+    "step": 147,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.7496739625930786,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.9707174897193909,
+      "holding_bonus": -0.11041124165058136,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.14300496876239777
+    }
+  },
+  {
+    "step": 148,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.5309454202651978,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.9806748628616333,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.07135716080665588
+    }
+  },
+  {
+    "step": 149,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.49328190088272095,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7606437802314758,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.1101093590259552,
+      "sharpe_bonus": 0.3223173916339874
+    }
+  },
+  {
+    "step": 150,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7416601181030273,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -1.0539380311965942,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.08929941058158875
+    }
+  },
+  {
+    "step": 151,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9488184452056885,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.7407167553901672,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.3969835638999939,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 152,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.095923662185669,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -1.0268994569778442,
+      "holding_bonus": -0.13800309598445892,
+      "profit_take_bonus": 0.5712873935699463,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 153,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.141461730003357,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.056046485900879,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.7741075158119202,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 154,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8626395463943481,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -1.1614279747009277,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.5715872049331665,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 155,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.735308051109314,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -1.2273255586624146,
+      "holding_bonus": -0.1291293054819107,
+      "profit_take_bonus": 0.5220707654953003,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 156,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.0271958112716675,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5986116528511047,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.4138485789299011,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 157,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8053392767906189,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8079718351364136,
+      "holding_bonus": 0.2560344934463501,
+      "profit_take_bonus": 0.5204654932022095,
+      "sharpe_bonus": 0.21625739336013794
+    }
+  },
+  {
+    "step": 158,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.972438395023346,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7215194702148438,
+      "holding_bonus": 0.09382379055023193,
+      "profit_take_bonus": 0.6010431051254272,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 159,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.6900374889373779,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.4494428038597107,
+      "holding_bonus": 0.19432038068771362,
+      "profit_take_bonus": 0.682136058807373,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 160,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8738330602645874,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.613426685333252,
+      "holding_bonus": 0.25726237893104553,
+      "profit_take_bonus": 0.7131714820861816,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 161,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.2364521026611328,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5631936192512512,
+      "holding_bonus": -0.18099752068519592,
+      "profit_take_bonus": 0.4806114435195923,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 162,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.280061798513013,
+    "reward_config": {
+      "return_weight": 1.0875394344329834,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7563180327415466,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.2524281442165375,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 163,
+    "sharpe_before": 2.280061798513013,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8446913957595825,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.6296907663345337,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.10969725251197815,
+      "sharpe_bonus": 0.08767712116241455
+    }
+  },
+  {
+    "step": 164,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.6971490383148193,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.4385268986225128,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.072337806224823,
+      "sharpe_bonus": 0.05455118417739868
+    }
+  },
+  {
+    "step": 165,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9425749182701111,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5702670812606812,
+      "holding_bonus": -0.07501788437366486,
+      "profit_take_bonus": 0.0629560649394989,
+      "sharpe_bonus": 0.09895956516265869
+    }
+  },
+  {
+    "step": 166,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1828863620758057,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5503413677215576,
+      "holding_bonus": -0.09573538601398468,
+      "profit_take_bonus": 0.051448360085487366,
+      "sharpe_bonus": 0.02175038307905197
+    }
+  },
+  {
+    "step": 167,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.4344007968902588,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.48521679639816284,
+      "holding_bonus": -0.10338230431079865,
+      "profit_take_bonus": 0.23436672985553741,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 168,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.43693208694458,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5993666052818298,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.09534230828285217,
+      "sharpe_bonus": 0.24227923154830933
+    }
+  },
+  {
+    "step": 169,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.6814730167388916,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.884779691696167,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0697920173406601
+    }
+  },
+  {
+    "step": 170,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.4311037063598633,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.728331446647644,
+      "holding_bonus": -0.0062401145696640015,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.0002485513687133789
+    }
+  },
+  {
+    "step": 171,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1945909261703491,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.24211770296096802,
+      "holding_bonus": -0.04014888033270836,
+      "profit_take_bonus": 0.22949101030826569,
+      "sharpe_bonus": 0.18651741743087769
+    }
+  },
+  {
+    "step": 172,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3434484004974365,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.23971742391586304,
+      "holding_bonus": 0.22154298424720764,
+      "profit_take_bonus": 0.48970019817352295,
+      "sharpe_bonus": 0.2264862060546875
+    }
+  },
+  {
+    "step": 173,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3925254344940186,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.31642037630081177,
+      "holding_bonus": -0.07096803188323975,
+      "profit_take_bonus": 0.5334525108337402,
+      "sharpe_bonus": 0.38259822130203247
+    }
+  },
+  {
+    "step": 174,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3087568283081055,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.10876584053039551,
+      "holding_bonus": 0.17104613780975342,
+      "profit_take_bonus": 0.2699737548828125,
+      "sharpe_bonus": 0.1768687665462494
+    }
+  },
+  {
+    "step": 175,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0693622827529907,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.19795019924640656,
+      "holding_bonus": 0.2635311782360077,
+      "profit_take_bonus": 0.19448207318782806,
+      "sharpe_bonus": 0.09187929332256317
+    }
+  },
+  {
+    "step": 176,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9998401403427124,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.36051467061042786,
+      "holding_bonus": 0.18720604479312897,
+      "profit_take_bonus": 0.06793832778930664,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 177,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1539576053619385,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.3599204123020172,
+      "holding_bonus": -0.05402402579784393,
+      "profit_take_bonus": 0.17095962166786194,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 178,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.4038255214691162,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6306281685829163,
+      "holding_bonus": 0.05353103578090668,
+      "profit_take_bonus": 0.060112178325653076,
+      "sharpe_bonus": 0.2827942967414856
+    }
+  },
+  {
+    "step": 179,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1429855823516846,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.829135000705719,
+      "holding_bonus": 0.2884359359741211,
+      "profit_take_bonus": 0.3045063018798828,
+      "sharpe_bonus": 0.4638907015323639
+    }
+  },
+  {
+    "step": 180,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3217968940734863,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8473473191261292,
+      "holding_bonus": 0.10536795854568481,
+      "profit_take_bonus": 0.5048122406005859,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 181,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.282832384109497,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7800647020339966,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.42987060546875,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 182,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.3189520664160286,
+    "reward_config": {
+      "return_weight": 0.9959952235221863,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8718835711479187,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.6061547994613647,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 183,
+    "sharpe_before": 2.3189520664160286,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7892224788665771,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.9844765067100525,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.8868300914764404,
+      "sharpe_bonus": 0.14520490169525146
+    }
+  },
+  {
+    "step": 184,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.6576091051101685,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7307023406028748,
+      "holding_bonus": 0.28437724709510803,
+      "profit_take_bonus": 0.9169115424156189,
+      "sharpe_bonus": 0.41069501638412476
+    }
+  },
+  {
+    "step": 185,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.6436753869056702,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.6730413436889648,
+      "holding_bonus": 0.006083071231842041,
+      "profit_take_bonus": 0.7738876938819885,
+      "sharpe_bonus": 0.42672598361968994
+    }
+  },
+  {
+    "step": 186,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8490155339241028,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.7123111486434937,
+      "holding_bonus": 0.2895277142524719,
+      "profit_take_bonus": 0.11531540751457214,
+      "sharpe_bonus": 0.35953405499458313
+    }
+  },
+  {
+    "step": 187,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.746052622795105,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.8152614831924438,
+      "holding_bonus": 0.22932162880897522,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.4440901279449463
+    }
+  },
+  {
+    "step": 188,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9843930006027222,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6201664209365845,
+      "holding_bonus": 0.1401866376399994,
+      "profit_take_bonus": 0.24131840467453003,
+      "sharpe_bonus": 0.21352122724056244
+    }
+  },
+  {
+    "step": 189,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7150493264198303,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6546528339385986,
+      "holding_bonus": 0.2040078043937683,
+      "profit_take_bonus": 0.1945154368877411,
+      "sharpe_bonus": 0.3609103560447693
+    }
+  },
+  {
+    "step": 190,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.7914475202560425,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.6064808368682861,
+      "holding_bonus": 0.2781861126422882,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.11628644168376923
+    }
+  },
+  {
+    "step": 191,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.1303023099899292,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.40904271602630615,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.10628736019134521,
+      "sharpe_bonus": 0.0
+    }
+  },
+  {
+    "step": 192,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1122472286224365,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.2746005356311798,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.15172740817070007,
+      "sharpe_bonus": 0.20764696598052979
+    }
+  },
+  {
+    "step": 193,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.9107958078384399,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.20177528262138367,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.3202703595161438
+    }
+  },
+  {
+    "step": 194,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.069366693496704,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.15388497710227966,
+      "holding_bonus": 0.28696316480636597,
+      "profit_take_bonus": 0.24814897775650024,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 195,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 0.8713993430137634,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.24791893362998962,
+      "holding_bonus": 0.30000001192092896,
+      "profit_take_bonus": 0.1991862952709198,
+      "sharpe_bonus": 0.5
+    }
+  },
+  {
+    "step": 196,
+    "sharpe_before": 3.029167083943449,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.2714298963546753,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.366975873708725,
+      "holding_bonus": -0.18883012235164642,
+      "profit_take_bonus": 0.15956290066242218,
+      "sharpe_bonus": 0.22083932161331177
+    }
+  },
+  {
+    "step": 197,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.0986131429672241,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.3437708914279938,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.36865168809890747,
+      "sharpe_bonus": 0.18794700503349304
+    }
+  },
+  {
+    "step": 198,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 0.8450220823287964,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.3121836483478546,
+      "holding_bonus": -0.20000000298023224,
+      "profit_take_bonus": 0.10538887977600098,
+      "sharpe_bonus": 0.30179405212402344
+    }
+  },
+  {
+    "step": 199,
+    "sharpe_before": 3.0336547838529206,
+    "sharpe_after": 2.9863287460960106,
+    "reward_config": {
+      "return_weight": 1.1104538440704346,
+      "transaction_cost": -0.009999999776482582,
+      "drawdown_penalty": -0.5800601840019226,
+      "holding_bonus": -0.044229522347450256,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.44604307413101196
+    }
+  },
+  {
+    "step": 200,
+    "sharpe_before": 2.9863287460960106,
+    "sharpe_after": 3.0336547838529206,
+    "reward_config": {
+      "return_weight": 1.3979142904281616,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.3865402936935425,
+      "holding_bonus": 0.1674763411283493,
+      "profit_take_bonus": 0.0,
+      "sharpe_bonus": 0.3992004096508026
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "iteration": 1,
+    "outcome": "ACCEPTED",
+    "delta_applied": [
+      -0.029798775911331177,
+      0.044426530599594116,
+      -0.013600200414657593,
+      -0.03936505317687988,
+      0.03165698051452637,
+      0.007594108581542969
+    ],
+    "sharpe_before": 2.005643942032462,
+    "sharpe_after": 2.988547902592399,
+    "reward_config": {
+      "return_weight": 0.9702012538909912,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.51360023021698,
+      "holding_bonus": 0.010634947568178177,
+      "profit_take_bonus": 0.2316569834947586,
+      "sharpe_bonus": 0.10759411007165909
+    },
+    "failure_distribution": {
+      "MAX_DRAWDOWN": 1
+    }
+  },
+  {
+    "iteration": 2,
+    "outcome": "REJECTED",
+    "delta_applied": [
+      -0.030962109565734863,
+      0.040602147579193115,
+      -0.016237497329711914,
+      -0.04241210222244263,
+      0.026477336883544922,
+      0.012483179569244385
+    ],
+    "sharpe_before": 2.988547902592399,
+    "sharpe_after": 2.988547902592399,
+    "reward_config": {
+      "return_weight": 0.9392391443252563,
+      "transaction_cost": 0.0,
+      "drawdown_penalty": -0.5298377275466919,
+      "holding_bonus": -0.03177715465426445,
+      "profit_take_bonus": 0.25813430547714233,
+      "sharpe_bonus": 0.12007728964090347
+    },
+    "failure_distribution": {
+      "MAX_DRAWDOWN": 1
+    }
+  }
+]

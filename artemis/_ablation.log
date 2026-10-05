@@ -1,0 +1,4 @@
+[ARTEMIS] Running experiments/ablation.py...
+
+[ABLATION] bull seed=0
+[ARTEMIS] Trained 200000 steps in 703s -> models/bull_ppo_seed0.zip
