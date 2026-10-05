@@ -1,4 +1,4 @@
-# ARTEMIS — Research Grade
+# ARTEMIS:Research Grade
 
 **A**utonomous **R**einforcement **T**rading with **E**pisode-**M**apped **I**ntelligent **S**elf-improvement
 
